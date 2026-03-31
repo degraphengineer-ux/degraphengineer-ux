@@ -59,7 +59,7 @@ I combine **clean code + creative design** to turn ideas into impactful realitie
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=degraphengineer-ux&layout=compact&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?user=degraphengineer-ux&layout=compact&theme=tokyonight" />
 </p>
 
 ---
