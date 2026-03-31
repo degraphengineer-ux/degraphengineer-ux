@@ -99,7 +99,7 @@ I combine **clean code + creative design** to turn ideas into impactful realitie
 ## 📫 Connect With Me
 
 <p align="center">
-  <a href="https://github.com/your-username">
+  <a href="https://github.com/degrapheningineer-ux">
     <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github" />
   </a>
 </p>
