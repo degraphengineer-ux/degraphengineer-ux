@@ -54,12 +54,13 @@ I combine **clean code + creative design** to turn ideas into impactful realitie
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=degraphengineer-ux&show_icons=true&theme=tokyonight&cache_seconds=86400" />
-  <img src="https://streak-stats.demolab.com?user=degraphengineer-ux&theme=tokyonight" />
+  <img src="https://img.shields.io/github/followers/degraphengineer-ux?style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/degraphengineer-ux?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/degraphengineer-ux/degraphengineer-ux?style=for-the-badge" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=degraphengineer-ux&layout=compact&theme=tokyonight&cache_seconds=86400" />
+  <img src="https://komarev.com/ghpvc/?username=degraphengineer-ux&style=for-the-badge" />
 </p>
 
 ---
