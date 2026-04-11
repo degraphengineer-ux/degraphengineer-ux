@@ -378,45 +378,88 @@
     </main>
     <!-- Footer -->
     <footer
-      class="bg-[#f6f3f2] dark:bg-stone-900 flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full"
+      class="w-full px-8 py-24 flex flex-col gap-12 bg-stone-100 dark:bg-stone-900"
     >
       <div
-        class="font-newsreader italic text-stone-900 dark:text-stone-50 mb-8 md:mb-0"
+        class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16"
       >
-        Digital Atelier
-      </div>
-      <div class="flex flex-col items-center gap-4">
-        <div class="flex gap-8">
-          <a
-            class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
-            href="#"
-            >Journal</a
-          >
-          <a
-            class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
-            href="#"
-            >Colophon</a
-          >
-          <a
-            class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
-            href="#"
-            >Legal</a
-          >
-          <a
-            class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
-            href="#"
-            >Accessibility</a
-          >
+        <div>
+          <h3 class="font-headline text-4xl mb-8 italic">
+            Let's build the
+            <span class="text-primary not-italic underline underline-offset-8"
+              >next reality</span
+            >.
+          </h3>
+          <div class="flex flex-wrap gap-8">
+            <a
+              class="text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 font-label text-xs uppercase tracking-widest hover:underline decoration-1 underline-offset-4"
+              href="#"
+              >The Collective</a
+            >
+            <a
+              class="text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 font-label text-xs uppercase tracking-widest hover:underline decoration-1 underline-offset-4"
+              href="https://github.com/degraphengineer-ux"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              class="text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 font-label text-xs uppercase tracking-widest hover:underline decoration-1 underline-offset-4"
+              href="https://www.facebook.com/degraphengine"
+              target="_blank"
+              >Facebook</a
+            >
+          </div>
         </div>
-        <div
-          class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400"
-        >
-          © 2024 Digital Atelier. Engineered for Humanity.
+        <div class="flex flex-col justify-end md:items-end">
+          <p
+            class="text-stone-400 text-right max-w-sm font-label text-[10px] leading-loose uppercase tracking-[0.2em]"
+          >
+            © 2024 Michael — Visionary Developer. Created in collaboration with
+            The Collective.
+          </p>
         </div>
-      </div>
-      <div class="hidden md:flex items-center gap-4 text-[#653cf6]">
-        <span class="material-symbols-outlined">north_east</span>
       </div>
     </footer>
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl z-50 flex justify-around py-4"
+    >
+      <button
+        onclick="window.location.href = 'index.html'"
+        class="flex flex-col items-center gap-1 text-[#653cf6]"
+      >
+        <span class="material-symbols-outlined">home</span>
+        <span class="font-label text-[8px] uppercase tracking-tighter"
+          >Home</span
+        >
+      </button>
+      <button
+        onclick="window.location.href = 'archive.html'"
+        class="flex flex-col items-center gap-1 text-stone-400"
+      >
+        <span class="material-symbols-outlined">grid_view</span>
+        <span class="font-label text-[8px] uppercase tracking-tighter"
+          >Work</span
+        >
+      </button>
+      <button
+        onclick="window.location.href = 'philosophy.html'"
+        class="flex flex-col items-center gap-1 text-stone-400"
+      >
+        <span class="material-symbols-outlined">person</span>
+        <span class="font-label text-[8px] uppercase tracking-tighter"
+          >Story</span
+        >
+      </button>
+      <button
+        onclick="window.location.href = 'contact.html'"
+        class="flex flex-col items-center gap-1 text-stone-400"
+      >
+        <span class="material-symbols-outlined">mail</span>
+        <span class="font-label text-[8px] uppercase tracking-tighter"
+          >Mail</span
+        >
+      </button>
+    </nav>
   </body>
 </html>
