@@ -1,0 +1,562 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>The Archive — Michael</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#4700d7",
+              error: "#ba1a1a",
+              "on-tertiary-container": "#ffd9c8",
+              "inverse-on-surface": "#f3f0ef",
+              "secondary-fixed": "#e6deff",
+              secondary: "#6052a6",
+              "on-error-container": "#93000a",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#313030",
+              "surface-variant": "#e5e2e1",
+              background: "#fcf9f8",
+              "primary-container": "#653cf6",
+              surface: "#fcf9f8",
+              outline: "#797488",
+              "on-primary-container": "#e4ddff",
+              "surface-container-highest": "#e5e2e1",
+              "secondary-fixed-dim": "#cabeff",
+              "tertiary-fixed": "#ffdbcc",
+              "on-tertiary-fixed": "#351000",
+              "on-primary-fixed": "#1c0062",
+              "surface-tint": "#5f34f0",
+              tertiary: "#823300",
+              "on-secondary-fixed-variant": "#48398d",
+              "inverse-primary": "#cabeff",
+              "error-container": "#ffdad6",
+              "on-secondary-container": "#433487",
+              "surface-bright": "#fcf9f8",
+              "on-tertiary-fixed-variant": "#7b2f00",
+              "surface-container": "#f0edec",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#ffb694",
+              primary: "#4c0fde",
+              "surface-dim": "#dcd9d9",
+              "primary-fixed": "#e6deff",
+              "on-surface-variant": "#484456",
+              "surface-container-low": "#f6f3f2",
+              "tertiary-container": "#a94400",
+              "primary-fixed-dim": "#cabeff",
+              "on-secondary-fixed": "#1c0161",
+              "secondary-container": "#b1a2fd",
+              "surface-container-high": "#ebe7e7",
+              "on-background": "#1c1b1b",
+              "outline-variant": "#c9c3d9",
+              "on-surface": "#1c1b1b",
+            },
+            borderRadius: {
+              DEFAULT: "0px",
+              lg: "0px",
+              xl: "0px",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Newsreader"],
+              body: ["Inter"],
+              label: ["Space Grotesk"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .text-editorial-lg {
+        font-size: 3.5rem;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl"
+    >
+      <div
+        class="flex justify-between items-center px-8 py-6 max-w-[1920px] mx-auto"
+      >
+        <div
+          class="text-2xl font-serif italic text-stone-900 dark:text-stone-50"
+        >
+          Michael
+        </div>
+        <div class="hidden md:flex items-center gap-10">
+          <a
+            class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label uppercase tracking-wider text-xs"
+            href="index.html"
+            >Work</a
+          >
+          <a
+            class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label uppercase tracking-wider text-xs"
+            href="philosophy.html"
+            >Philosophy</a
+          >
+          <a
+            class="text-[#653cf6] font-bold border-b-0 font-label uppercase tracking-wider text-xs"
+            href="archive.html"
+            >Archive</a
+          >
+          <a
+            class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label uppercase tracking-wider text-xs"
+            href="contact.html"
+            >Contact</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            class="hover:opacity-70 transition-opacity duration-500 text-on-surface"
+          >
+            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="pt-32 pb-24 px-8 max-w-[1920px] mx-auto">
+      <!-- Hero Section -->
+      <header class="mb-32 max-w-4xl">
+        <div
+          class="font-label text-xs uppercase tracking-[0.2em] text-primary mb-6"
+        >
+          A chronological repository
+        </div>
+        <h1 class="font-headline text-editorial-lg italic mb-8">The Archive</h1>
+        <p
+          class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl"
+        >
+          A curated selection of experiments, technical studies, and digital
+          artifacts developed between 2022 and 2024. A living history of
+          High-Tech Humanism.
+        </p>
+      </header>
+      <!-- Section: Major Works -->
+      <section class="mb-40">
+        <div
+          class="flex items-baseline justify-between mb-12 border-b border-outline-variant/15 pb-4"
+        >
+          <h2 class="font-headline text-3xl italic">Major Works</h2>
+          <span
+            class="font-label text-xs text-outline tracking-widest uppercase"
+            >Select 01 — 03</span
+          >
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+          <!-- Entry 1: 2024 -->
+          <div class="md:col-span-8 group cursor-pointer">
+            <div
+              class="aspect-[16/9] overflow-hidden bg-surface-container-low mb-6"
+            >
+              <img
+                class="w-full h-full object-cover grayscale brightness-90 hover:scale-105 transition-transform duration-700"
+                data-alt="high contrast black and white abstract architectural render with sharp shadows and geometric precision"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrFljNyGAlp1VZlGjMPejbjoQXrK4GfzH6hTVyVp1pVjLqpjQXgvnbqx-0WVwkVCoxvIgRgeoGRupttTx7O36L358fGqz-fjRDUfivD9RmH2koz9uBKGVPdfinFSyOF1hRlqeChleENs4-g0qnL2kx9kfrkGU3Oj3NtCVdfR3JqotrYyfJ7lSstqm7cb1j_8YMOnelbDW3UbRG4Mt_OjVsP_uIEyw-nJxVkXriCe55Qij0yvTB-_WuHEOd36Rx2FBvEqaXJOCxtG8"
+              />
+            </div>
+            <div
+              class="flex flex-col md:flex-row md:items-start justify-between gap-4"
+            >
+              <div>
+                <span
+                  class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block"
+                  >2024 — Digital Product</span
+                >
+                <h3
+                  class="font-headline text-2xl mb-2 group-hover:text-primary transition-colors"
+                >
+                  Cognitive Canvas
+                </h3>
+                <p class="font-body text-sm text-on-surface-variant max-w-md">
+                  Neural network visualization platform. React + Three.js +
+                  WebGL Shaders.
+                </p>
+              </div>
+              <div
+                class="font-label text-xs border border-outline-variant/30 px-3 py-1 self-start"
+              >
+                DEPLOYED
+              </div>
+            </div>
+          </div>
+          <!-- Entry 2: 2023 -->
+          <div class="md:col-span-4 mt-20 group cursor-pointer">
+            <div
+              class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6"
+            >
+              <img
+                class="w-full h-full object-cover grayscale brightness-95 hover:scale-105 transition-transform duration-700"
+                data-alt="black and white macro photography of textured stone surface with deep crevices and sharp dramatic lighting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc8KixzQ0o9bhwqLxp462RjrcOXSJRhhqlF193XewWE1apQRC7qCiWErECGDMH7RNmzU5AdUqNj2o9VXMyzRYcEN3lmQ-eT3mMWLYLikDAlhl97esjEfArzJ4SSroRp6j8C-qOuky78ia-T3iD_jwcaHHSwT9icTO5fRg_aNOvwwZftroWpUKonjQ3bX34dddKJ-95Foz0I1-KglCYu10V9eYIzHGpRUzKkSYzehpTaHStvPWUWUySrOnk1Ao8qFVjgc4yZdcI06w"
+              />
+            </div>
+            <span
+              class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block"
+              >2023 — Infrastructure</span
+            >
+            <h3
+              class="font-headline text-2xl mb-2 group-hover:text-primary transition-colors"
+            >
+              Stone API
+            </h3>
+            <p class="font-body text-sm text-on-surface-variant">
+              Scalable PHP Backend Architecture with Redis Caching Layer.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Code Experiments -->
+      <section class="mb-40">
+        <div
+          class="flex items-baseline justify-between mb-12 border-b border-outline-variant/15 pb-4"
+        >
+          <h2 class="font-headline text-3xl italic">Code Experiments</h2>
+          <span
+            class="font-label text-xs text-outline tracking-widest uppercase"
+            >Lab Records</span
+          >
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <!-- Exp 1 -->
+          <div class="flex flex-col gap-6 group">
+            <div class="h-48 overflow-hidden">
+              <img
+                class="w-full h-full object-cover grayscale hover:brightness-110 transition-all duration-500"
+                data-alt="abstract black and white fluid smoke-like pattern swirling in dark void minimalist aesthetic"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP7dBxKlJThBdtYtuNuo18DsU8VITQUvBXe-YSzxSLygfHjh8ZH7m0XQJEvEAL0sbi3YVloLnDsU7Tq8_N5q4UnaCIxBmUc9MnH1p9Foif2ljYX6WAaJ0lj03UMK1hcLhd5hMA2LqsnMU2B2wfZXejEtZnlaVJrQuK_ZWYhxh6cSSmxDPuhXUHMPC7hUQYzvdXijawOWkSh05-Li7lQKbCUDegO2mkyggNneZc-D-Kk9wfe_vXLaL423zwLWi0_3BK4_u5tAD9shw"
+              />
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                <span class="font-label text-[10px] uppercase tracking-widest"
+                  >Active Test</span
+                >
+              </div>
+              <h4 class="font-headline text-xl mb-2">Fluid Dynamics v1</h4>
+              <p
+                class="font-body text-xs text-on-surface-variant leading-relaxed"
+              >
+                Exploration of Navier-Stokes equations for browser-based
+                particle systems. p5.js + Canvas API.
+              </p>
+            </div>
+          </div>
+          <!-- Exp 2 -->
+          <div class="flex flex-col gap-6 group">
+            <div class="h-48 overflow-hidden">
+              <img
+                class="w-full h-full object-cover grayscale hover:brightness-110 transition-all duration-500"
+                data-alt="geometric black and white grid patterns intersecting with organic light leak shapes high contrast"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGf8875yPDrX0XNVQajHw9jVPbkZ1ooyzyFBE8hJtsA0CRbE4S9wJ1IDMYiItyMHZPuTUjKP592borebHVqKR9_Od-iphwRmxRvnV9wulHiBYtecJIpMaDK6vNlrZ0UyIeSP61sifeReb-gYXC-UDcye36JCVj2dzNl9I6FgVNlUfvSKtcQD3oWt47cvXz0kimPh2FVFNvGPPiWzny6ybp2N1CsqENKWUaLG8im7jDCfxERgNnJ0q5aETh_lr8TwnQAeecz1KnGwA"
+              />
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+                <span
+                  class="font-label text-[10px] uppercase tracking-widest text-outline"
+                  >Archived</span
+                >
+              </div>
+              <h4 class="font-headline text-xl mb-2">Spectral Parser</h4>
+              <p
+                class="font-body text-xs text-on-surface-variant leading-relaxed"
+              >
+                Experimental markdown-to-pdf compiler using Rust and
+                WebAssembly.
+              </p>
+            </div>
+          </div>
+          <!-- Exp 3 -->
+          <div class="flex flex-col gap-6 group">
+            <div class="h-48 overflow-hidden">
+              <img
+                class="w-full h-full object-cover grayscale hover:brightness-110 transition-all duration-500"
+                data-alt="abstract close-up of computer circuitry elements in stark black and white lighting industrial tech"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy26LqhJ4uTupoAgnTz9NEF2yd8eQEMwg_WSRedEgzzCtepC4NUgBAxqywOfCKaJewLHcnh3TQU-FPlb30JjOoh6y4Iu6izf856p4iKL3aERcl0vGhhcgffebrV-o7I8qf_SzckzLbKIDU1TV0f9MAem5ynsYaBe5LMVRrQqwzb1ksM6eyDBMorLa_7oo3ayRn9HxFL3rVK1eJA7tFFS-NU3pWIbwT0P6Z7Jc6gNBP601fpQKiMprxgEUrCosn7psErft8OcmmEF0"
+              />
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                <span class="font-label text-[10px] uppercase tracking-widest"
+                  >Active Test</span
+                >
+              </div>
+              <h4 class="font-headline text-xl mb-2">Voxel Engine</h4>
+              <p
+                class="font-body text-xs text-on-surface-variant leading-relaxed"
+              >
+                Custom render engine for infinite terrain generation. C++ /
+                OpenGL abstraction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Studies (Masonry-like list) -->
+      <section class="mb-40">
+        <div
+          class="flex items-baseline justify-between mb-12 border-b border-outline-variant/15 pb-4"
+        >
+          <h2 class="font-headline text-3xl italic">Design Studies</h2>
+          <span
+            class="font-label text-xs text-outline tracking-widest uppercase"
+            >Visual Research</span
+          >
+        </div>
+        <div class="space-y-0">
+          <!-- Table Row 1 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 py-10 border-b border-outline-variant/10 group hover:bg-surface-container-low transition-colors px-4 -mx-4"
+          >
+            <div
+              class="md:col-span-2 font-label text-xs text-outline self-center"
+            >
+              OCT 2023
+            </div>
+            <div class="md:col-span-5 font-headline text-2xl self-center">
+              Minimalist Typography Systems
+            </div>
+            <div
+              class="md:col-span-3 font-body text-sm text-on-surface-variant self-center"
+            >
+              Exploration of vertical rhythm in editorial digital layouts.
+            </div>
+            <div class="md:col-span-2 flex justify-end items-center gap-4">
+              <div
+                class="w-12 h-12 bg-surface-container-highest overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover grayscale"
+                  data-alt="black and white macro shot of serif typography letterform details"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGiFihqmxlxoAXhG1yaT3wkZUPnCa_HJX8IilQfKubNp-rZN-Xm5ylB88cDqPSSEL-3OMfwg9kJymkhAzinYTH8-e4rRsKJ5_lvM_IYHXcm8CMlocFyLlCDoDS5nvj3JAlv4aT5_j_b86GU_uowDCWVX-qRrydMYJZHJGCAgC5kAeai0KSwgYmaPcOalHQzaleYMu7Y9kgALoTm0MPQ7eFLynN1Ecdk5AJ-e16Ae3x0x_z1Gv602WR4UP1WSKzrHXuOYwPeGRCXso"
+                />
+              </div>
+              <span
+                class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                data-icon="north_east"
+                >north_east</span
+              >
+            </div>
+          </div>
+          <!-- Table Row 2 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 py-10 border-b border-outline-variant/10 group hover:bg-surface-container-low transition-colors px-4 -mx-4"
+          >
+            <div
+              class="md:col-span-2 font-label text-xs text-outline self-center"
+            >
+              JUN 2023
+            </div>
+            <div class="md:col-span-5 font-headline text-2xl self-center">
+              Monochrome Texture Mapping
+            </div>
+            <div
+              class="md:col-span-3 font-body text-sm text-on-surface-variant self-center"
+            >
+              Visual research into tactile feedback within digital interfaces.
+            </div>
+            <div class="md:col-span-2 flex justify-end items-center gap-4">
+              <div
+                class="w-12 h-12 bg-surface-container-highest overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover grayscale"
+                  data-alt="black and white study of linen texture with soft shadows"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsUPUrHhx8gXg5S63INnsKfMkbvl1JE3lN-3U0H48P5l1uNwmzBGHT9OpDr1k9U3c-42j0p4jdU476J6Rze2Ja13V-BlcWwfg7IQ71CL5ufOeCdFmiq-54Q593dY4Vg5qO1WFAdn4ljgNYoGgvP3G8-IvjVUxOyTzdIOqwV4FecY_cJaBQgvDYGzSHx0k9OEVFjFMDBYXmlaSjpcojXHTmU2e7sTu4pKa6QdkD725zE3VQ-I7h5Rw5p0G6VNb4Te4szMyMaKrscwQ"
+                />
+              </div>
+              <span
+                class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                data-icon="north_east"
+                >north_east</span
+              >
+            </div>
+          </div>
+          <!-- Table Row 3 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 py-10 border-b border-outline-variant/10 group hover:bg-surface-container-low transition-colors px-4 -mx-4"
+          >
+            <div
+              class="md:col-span-2 font-label text-xs text-outline self-center"
+            >
+              JAN 2022
+            </div>
+            <div class="md:col-span-5 font-headline text-2xl self-center">
+              Brutalist Shells
+            </div>
+            <div
+              class="md:col-span-3 font-body text-sm text-on-surface-variant self-center"
+            >
+              Developing high-contrast UI frameworks with zero border-radius.
+            </div>
+            <div class="md:col-span-2 flex justify-end items-center gap-4">
+              <div
+                class="w-12 h-12 bg-surface-container-highest overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover grayscale"
+                  data-alt="black and white brutalist concrete building exterior with sharp angles"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP8YsQOTkIyOK6eh6kTh_lx0Fqkuhtw92AW3EKu1abBxCSwRF-a38iswj9JlE4FBTQX8MF_hYo2-NGOvphE108JFd9gruKZ5b_KJxBBRg3-HHSEdSLOj-8MKNTb637kHtqjzjkY4R6qoxidfwN97FM4fBrWoJ1vzs6fNYXZQaTgkFVK0ZAcghT2vujWn64aF2EFgt4AMuEhO1v18NC8yW57se5OtBQWi_LRkAzn21DFE1CGdljK_TYG6kCPHGBt7Qq6Fy5kncwdgg"
+                />
+              </div>
+              <span
+                class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                data-icon="north_east"
+                >north_east</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Newsletter / CTA -->
+      <section
+        class="max-w-4xl mx-auto py-32 text-center border-t border-outline-variant/15"
+      >
+        <h2 class="font-headline text-4xl italic mb-6">Stay Informed</h2>
+        <p class="font-body text-on-surface-variant mb-12 max-w-xl mx-auto">
+          Receive a monthly artifact — a curated dispatch of my latest
+          experiments, technical readings, and design discoveries.
+        </p>
+        <form class="flex flex-col md:flex-row gap-0 max-w-md mx-auto">
+          <input
+            class="flex-grow bg-transparent border-b border-outline-variant text-on-surface py-4 px-2 focus:border-primary focus:ring-0 font-body placeholder:text-outline outline-none"
+            placeholder="Your email address"
+            type="email"
+          />
+          <button
+            class="bg-primary text-on-primary px-10 py-4 font-label uppercase tracking-widest text-xs hover:bg-primary-container transition-colors"
+          >
+            Join
+          </button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="w-full px-8 py-24 flex flex-col gap-12 bg-stone-100 dark:bg-stone-900"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="lg:col-span-2">
+          <div
+            class="font-headline text-3xl italic mb-6 text-stone-900 dark:text-stone-50"
+          >
+            Michael
+          </div>
+          <p class="font-body text-stone-500 max-w-sm">
+            Designing digital ecosystems at the intersection of precision and
+            humanity.
+          </p>
+        </div>
+        <div>
+          <h5
+            class="font-label text-xs uppercase tracking-widest text-stone-900 dark:text-stone-50 mb-6"
+          >
+            Navigation
+          </h5>
+          <ul class="flex flex-col gap-4 font-label text-sm text-stone-400">
+            <li>
+              <a
+                class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors hover:underline decoration-1 underline-offset-4"
+                href="#"
+                >The Collective</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors hover:underline decoration-1 underline-offset-4"
+                href="#"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors hover:underline decoration-1 underline-offset-4"
+                href="#"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors hover:underline decoration-1 underline-offset-4"
+                href="#"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="font-label text-xs uppercase tracking-widest text-stone-900 dark:text-stone-50 mb-6"
+          >
+            Contact
+          </h5>
+          <a
+            class="font-headline text-xl italic text-[#653cf6] hover:opacity-70 transition-opacity"
+            href="mailto:hello@michael.vision"
+            >hello@michael.vision</a
+          >
+        </div>
+      </div>
+      <div
+        class="pt-12 border-t border-stone-200 dark:border-stone-800 flex flex-col md:flex-row justify-between gap-6 items-center"
+      >
+        <p
+          class="font-label text-[10px] uppercase tracking-widest text-stone-400 text-center md:text-left"
+        >
+          © 2024 Michael — Visionary Developer. Created in collaboration with
+          The Collective.
+        </p>
+        <div class="flex gap-8">
+          <span
+            class="font-label text-[10px] text-stone-400 uppercase tracking-widest"
+            >Built with precision</span
+          >
+          <span
+            class="font-label text-[10px] text-stone-400 uppercase tracking-widest"
+            >40.7128° N, 74.0060° W</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

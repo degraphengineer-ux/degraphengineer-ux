@@ -1,0 +1,581 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Michael — Visionary Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#7b2f00",
+              "on-primary": "#ffffff",
+              "tertiary-fixed-dim": "#ffb694",
+              "surface-dim": "#dcd9d9",
+              "primary-fixed-dim": "#cabeff",
+              "primary-container": "#653cf6",
+              "on-primary-fixed-variant": "#4700d7",
+              "inverse-surface": "#313030",
+              "secondary-container": "#b1a2fd",
+              error: "#ba1a1a",
+              "on-primary-container": "#e4ddff",
+              outline: "#797488",
+              background: "#fcf9f8",
+              "surface-bright": "#fcf9f8",
+              "primary-fixed": "#e6deff",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#a94400",
+              "surface-container-high": "#ebe7e7",
+              "on-tertiary-fixed": "#351000",
+              "tertiary-fixed": "#ffdbcc",
+              "secondary-fixed": "#e6deff",
+              "inverse-on-surface": "#f3f0ef",
+              surface: "#fcf9f8",
+              "on-primary-fixed": "#1c0062",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e5e2e1",
+              "outline-variant": "#c9c3d9",
+              "on-surface": "#1c1b1b",
+              "surface-tint": "#5f34f0",
+              tertiary: "#823300",
+              "on-secondary-container": "#433487",
+              secondary: "#6052a6",
+              "surface-container": "#f0edec",
+              "inverse-primary": "#cabeff",
+              "on-background": "#1c1b1b",
+              "on-secondary-fixed": "#1c0161",
+              "surface-variant": "#e5e2e1",
+              "secondary-fixed-dim": "#cabeff",
+              "surface-container-low": "#f6f3f2",
+              "on-tertiary-container": "#ffd9c8",
+              "on-secondary-fixed-variant": "#48398d",
+              "on-surface-variant": "#484456",
+              primary: "#4c0fde",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+            },
+            borderRadius: {
+              DEFAULT: "0px",
+              lg: "0px",
+              xl: "0px",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Newsreader", "serif"],
+              body: ["Inter", "sans-serif"],
+              label: ["Space Grotesk", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .bg-noise {
+        background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDAszhRRkkXxSaSRdl8baTbxvNGvhiSTZU08GXKqfXRN0PvhP9fxQwmpEbFR1eg7zCvuYOXTUFyK740N1W5HR-il2o2F618BaRnW3Kgm1fFLOYTRvr-9YpbfqnhTOFrYinSikq5WWVsohvyFZZh0mXxhM4gWqPVQNNFhmWN87Ra23JHxL9ZFB6a59Okp838IxYHXswYXcNb1yWD9yGoNVMmesQVL6N3kmmdoqEdwKedd4UU3MzgYqbESEQJYPfFJQyk2g2jIBlBS0s);
+        opacity: 0.05;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl flex justify-between items-center px-8 py-6 max-w-[1920px] mx-auto"
+    >
+      <div class="text-2xl font-serif italic text-stone-900 dark:text-stone-50">
+        Michael
+      </div>
+      <div class="hidden md:flex gap-12">
+        <a
+          class="text-[#653cf6] font-bold border-b-0 font-label text-xs tracking-widest uppercase"
+          href="index.html"
+          >Work</a
+        >
+        <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label text-xs tracking-widest uppercase"
+          href="philosophy.html"
+          >Philosophy</a
+        >
+        <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label text-xs tracking-widest uppercase"
+          href="archive.html"
+          >Archive</a
+        >
+        <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label text-xs tracking-widest uppercase"
+          href="contact.html"
+          >Contact</a
+        >
+      </div>
+      <div class="flex items-center gap-4">
+        <span
+          class="material-symbols-outlined text-stone-900 dark:text-stone-50 cursor-pointer hover:opacity-70 transition-opacity duration-500"
+          >menu</span
+        >
+      </div>
+    </nav>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="min-h-screen flex flex-col justify-center px-8 pt-24 pb-12 overflow-hidden relative"
+      >
+        <div class="absolute inset-0 bg-noise pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto w-full relative z-10">
+          <p
+            class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-8 animate-pulse"
+          >
+            Available for Global Collaboration
+          </p>
+          <h1
+            class="font-headline text-[clamp(3.5rem,12vw,8rem)] leading-[0.9] tracking-tighter mb-12 italic"
+          >
+            Michael:
+            <span class="text-primary not-italic">Coding the Future</span>
+            <br />
+            from Kalobeyei.
+          </h1>
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-12"
+          >
+            <p
+              class="max-w-xl font-body text-xl text-on-surface-variant leading-relaxed"
+            >
+              Grade 9 scholar, Full-Stack Developer in training, and Visual
+              Designer. Bridging the gap between the digital frontier and human
+              storytelling.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="archive.html"
+                class="bg-primary text-on-primary px-10 py-5 font-label uppercase text-sm tracking-widest hover:bg-primary-container transition-all duration-500"
+              >
+                Explore Works
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Abstract background shape -->
+        <div
+          class="absolute -right-24 top-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"
+        ></div>
+      </section>
+      <!-- Story Section: Editorial Layout -->
+      <section class="py-32 px-8 bg-surface-container-low">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start"
+        >
+          <div class="md:col-span-5 relative">
+            <div
+              class="aspect-[4/5] bg-surface-container overflow-hidden group"
+            >
+              <img
+                alt="Professional Workspace"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
+                data-alt="high-tech minimalist workspace with clean white desk, professional lighting, and subtle blue accents on computer screens"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD55I06WiL4EDKcWlj6j0eEDrhsapFk1ue1aXSoVlrMArAxv9Vt2VM17yPpMmgyfzVcC3hRXIUaz9TmHUog26XWKoCRm021PRpvFe7qvR6OUy_5vQb6LXKAcm9NJYglXTJsLlHNsekVCLmbA_nEkQ62NCRzHYOi-oMGzA_GvRBceAIYwUL8S2RxbLhorfvNHFDh6qP30Kvq_pxb3njUctzIly5gKWvh5tLMIdDGewAu5yThw-D29_IxkVkmUSujWlbMs5_4zmJA0OQ"
+              />
+            </div>
+            <div
+              class="absolute -bottom-8 -right-8 bg-primary p-8 hidden lg:block"
+            >
+              <span class="font-headline text-4xl text-on-primary italic"
+                >Est. 2024</span
+              >
+            </div>
+          </div>
+          <div class="md:col-span-7 flex flex-col justify-center">
+            <span
+              class="font-label text-xs uppercase tracking-widest text-primary mb-6"
+              >The Narrative</span
+            >
+            <h2 class="font-headline text-5xl md:text-6xl mb-12 leading-tight">
+              Mastering the <span class="italic">Digital Silk Road</span>.
+            </h2>
+            <div
+              class="space-y-8 font-body text-lg text-on-surface-variant leading-relaxed max-w-2xl"
+            >
+              <p>
+                From the vibrant heart of Kalobeyei, my journey transcends
+                geographical boundaries through the medium of code. Currently
+                navigating Grade 9, I am synthesizing the discipline of academia
+                with the fluid logic of full-stack engineering.
+              </p>
+              <p
+                class="border-l-4 border-primary pl-8 italic font-headline text-2xl text-on-surface"
+              >
+                "Innovation is the bridge between our current reality and our
+                collective dreams."
+              </p>
+              <p>
+                This journey is deeply anchored in the guidance of
+                <span class="text-on-surface font-bold">Sauda</span>. Her
+                advocacy for technology has been the north star of my digital
+                atelier, transforming curiosity into professional-grade
+                precision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Arsenal Section: Bento Grid -->
+      <section class="py-32 px-8">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8"
+          >
+            <div>
+              <span
+                class="font-label text-xs uppercase tracking-widest text-primary mb-6 block"
+                >Technical Prowess</span
+              >
+              <h2 class="font-headline text-5xl md:text-6xl italic">
+                The Arsenal
+              </h2>
+            </div>
+            <p
+              class="max-w-xs font-label text-xs text-on-surface-variant uppercase leading-loose tracking-widest"
+            >
+              A curated stack of technologies designed to build resilient
+              digital experiences.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-1">
+            <!-- HTML/CSS/JS -->
+            <div
+              class="md:col-span-2 bg-surface-container-low p-12 hover:bg-surface-container-highest transition-colors duration-500"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl mb-8"
+                >code</span
+              >
+              <h3 class="font-headline text-3xl mb-4">Core Architecture</h3>
+              <p class="font-body text-on-surface-variant mb-6">
+                Expert mastery of HTML5, CSS3, and modern JavaScript
+                environments.
+              </p>
+              <ul
+                class="font-label text-[10px] uppercase tracking-widest space-y-2 opacity-60"
+              >
+                <li>Semantic Markup</li>
+                <li>Advanced CSS Layouts</li>
+                <li>DOM Manipulation</li>
+              </ul>
+            </div>
+            <!-- PHP -->
+            <div
+              class="bg-surface-container p-12 hover:bg-surface-container-highest transition-colors duration-500"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl mb-8"
+                >database</span
+              >
+              <h3 class="font-headline text-3xl mb-4">PHP</h3>
+              <p class="font-body text-on-surface-variant">
+                Server-side logic and scalable back-end foundations.
+              </p>
+            </div>
+            <!-- GSAP -->
+            <div
+              class="bg-surface-container-low p-12 hover:bg-surface-container-highest transition-colors duration-500"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl mb-8"
+                >motion_mode</span
+              >
+              <h3 class="font-headline text-3xl mb-4">GSAP</h3>
+              <p class="font-body text-on-surface-variant">
+                Fluid motion and high-performance digital choreography.
+              </p>
+            </div>
+            <!-- Services -->
+            <div
+              class="md:col-span-4 grid grid-cols-1 md:grid-cols-3 bg-stone-900 text-stone-50"
+            >
+              <div
+                class="p-12 border-stone-800 border-b md:border-b-0 md:border-r"
+              >
+                <h4
+                  class="font-label text-xs uppercase tracking-[0.2em] mb-6 opacity-50"
+                >
+                  Service 01
+                </h4>
+                <p class="font-headline text-2xl">Full-Stack Development</p>
+              </div>
+              <div
+                class="p-12 border-stone-800 border-b md:border-b-0 md:border-r"
+              >
+                <h4
+                  class="font-label text-xs uppercase tracking-[0.2em] mb-6 opacity-50"
+                >
+                  Service 02
+                </h4>
+                <p class="font-headline text-2xl">Responsive UI/UX</p>
+              </div>
+              <div class="p-12">
+                <h4
+                  class="font-label text-xs uppercase tracking-[0.2em] mb-6 opacity-50"
+                >
+                  Service 03
+                </h4>
+                <p class="font-headline text-2xl">Brand Equilibrium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fellowship Section: Masonry-style Grid -->
+      <section class="py-32 px-8 bg-surface-container-lowest">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-24">
+            <span
+              class="font-label text-xs uppercase tracking-widest text-primary mb-6 block"
+              >The Collective</span
+            >
+            <h2 class="font-headline text-6xl italic">
+              Synergistic Visionaries
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <!-- Degraphic Machine -->
+            <div
+              class="md:col-span-7 bg-surface-container-low overflow-hidden flex flex-col md:flex-row group cursor-pointer"
+            >
+              <div class="w-full md:w-1/2 aspect-square md:aspect-auto">
+                <img
+                  alt="Photography Studio"
+                  class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
+                  data-alt="dramatic professional studio camera equipment with soft bokeh and monochromatic aesthetic"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdNBkhYOPN99DBYH_vR0RdeAPJeTdruzusCahyouU58mbgZ_-C2_fsmwIqtCUjOixk0SGTcNgqzFkUUt6R7Ef7XRn3LcAuE5FfEmmFwK5VxsHyivIuw3K9aiFtO2X8v_HQep1hmI3EsOD6EloRTGdRjPN2Wel8dP3PA4iI_DJNe0G4xhLNLhvUvq1uL1-91AlFFIc0woewZH55RwJBcFb704tqxK4b5Keh8-QYAPVyoopo8n9zqwznxLPgAXHj2rpYL4w9jGzJzY8"
+                />
+              </div>
+              <div class="w-full md:w-1/2 p-12 flex flex-col justify-center">
+                <h4 class="font-headline text-3xl mb-2">Degraphic Machine</h4>
+                <p
+                  class="font-label text-xs uppercase text-primary tracking-widest mb-6"
+                >
+                  Photography &amp; Optics
+                </p>
+                <p class="font-body text-sm text-on-surface-variant">
+                  Capturing the soul of the digital age through a master lens.
+                </p>
+              </div>
+            </div>
+            <!-- Josue -->
+            <div
+              class="md:col-span-5 bg-surface p-12 border border-outline-variant/15 flex flex-col justify-between hover:bg-primary hover:text-on-primary transition-all duration-500 group"
+            >
+              <div>
+                <span class="material-symbols-outlined text-4xl mb-8"
+                  >terminal</span
+                >
+                <h4 class="font-headline text-3xl mb-2">Josue</h4>
+                <p
+                  class="font-label text-xs uppercase opacity-60 tracking-widest mb-6"
+                >
+                  Developer
+                </p>
+              </div>
+              <p class="font-body text-sm leading-relaxed">
+                The architect of logical structures and system integrations.
+              </p>
+            </div>
+            <!-- Bonge -->
+            <div
+              class="md:col-span-5 bg-surface-container-high p-12 flex flex-col justify-between hover:bg-stone-900 hover:text-stone-50 transition-all duration-500"
+            >
+              <div>
+                <h4 class="font-headline text-3xl mb-2">Bonge</h4>
+                <p
+                  class="font-label text-xs uppercase text-primary tracking-widest mb-6"
+                >
+                  Strategic Analyst
+                </p>
+              </div>
+              <p class="font-body text-sm leading-relaxed">
+                Navigating market complexities with surgical precision and
+                visionary insights.
+              </p>
+            </div>
+            <!-- Amani -->
+            <div
+              class="md:col-span-7 bg-surface-container-low overflow-hidden flex flex-col md:flex-row-reverse group cursor-pointer"
+            >
+              <div class="w-full md:w-1/2 aspect-square md:aspect-auto">
+                <img
+                  alt="Percussion Close-up"
+                  class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
+                  data-alt="close-up of intricate wooden percussion instruments in a warm lit studio setting with deep shadows"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHI94ePW4jVGoQyE8eKITAsxOnTURttoN5lVS560VKWYc6kFh10i4FtjHDiPGwkJoavS1Y0-_OplqmzigUDrhzNI6oonCpCxz2-J5i-UwyReDF0qHjq0ScQIvGz8bbeVW6t2BkWtLnuXOP8mZOJiQNPqyY0emwaIk0zBkhOgJytgr7jJpmyIEgZ_RTK2YAzQMw9KPir_BSdtUlqfOrF-hN2Zu6b8hTsm17a-ZN4sIgbFO_7nKgZPtbwzyQQF444sBpSzToSW3uXE8"
+                />
+              </div>
+              <div class="w-full md:w-1/2 p-12 flex flex-col justify-center">
+                <h4 class="font-headline text-3xl mb-2">Amani</h4>
+                <p
+                  class="font-label text-xs uppercase text-primary tracking-widest mb-6"
+                >
+                  Percussionist
+                </p>
+                <p class="font-body text-sm text-on-surface-variant">
+                  Defining the rhythm of our creative pulse.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="w-full px-8 py-24 flex flex-col gap-12 bg-stone-100 dark:bg-stone-900"
+    >
+      <div
+        class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16"
+      >
+        <div>
+          <h3 class="font-headline text-4xl mb-8 italic">
+            Let's build the
+            <span class="text-primary not-italic underline underline-offset-8"
+              >next reality</span
+            >.
+          </h3>
+          <div class="flex flex-wrap gap-8">
+            <a
+              class="text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 font-label text-xs uppercase tracking-widest hover:underline decoration-1 underline-offset-4"
+              href="#"
+              >The Collective</a
+            >
+            <a
+              class="text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 font-label text-xs uppercase tracking-widest hover:underline decoration-1 underline-offset-4"
+              href="#"
+              >GitHub</a
+            >
+            <a
+              class="text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 font-label text-xs uppercase tracking-widest hover:underline decoration-1 underline-offset-4"
+              href="#"
+              >LinkedIn</a
+            >
+            <a
+              class="text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 font-label text-xs uppercase tracking-widest hover:underline decoration-1 underline-offset-4"
+              href="#"
+              >Twitter</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col justify-end md:items-end">
+          <p
+            class="text-stone-400 text-right max-w-sm font-label text-[10px] leading-loose uppercase tracking-[0.2em]"
+          >
+            © 2024 Michael — Visionary Developer. Created in collaboration with
+            The Collective.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl z-50 flex justify-around py-4"
+    >
+      <button class="flex flex-col items-center gap-1 text-[#653cf6]">
+        <span class="material-symbols-outlined">home</span>
+        <span class="font-label text-[8px] uppercase tracking-tighter"
+          >Home</span
+        >
+      </button>
+      <button class="flex flex-col items-center gap-1 text-stone-400">
+        <span class="material-symbols-outlined">grid_view</span>
+        <span class="font-label text-[8px] uppercase tracking-tighter"
+          >Work</span
+        >
+      </button>
+      <button class="flex flex-col items-center gap-1 text-stone-400">
+        <span class="material-symbols-outlined">person</span>
+        <span class="font-label text-[8px] uppercase tracking-tighter"
+          >Story</span
+        >
+      </button>
+      <button class="flex flex-col items-center gap-1 text-stone-400">
+        <span class="material-symbols-outlined">mail</span>
+        <span class="font-label text-[8px] uppercase tracking-tighter"
+          >Mail</span
+        >
+      </button>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 1. Split Text Animation for Hero
+      const heroHeading = new SplitType(".font-headline", {
+        types: "chars,words",
+      });
+      gsap.from(heroHeading.chars, {
+        opacity: 0,
+        y: 50,
+        rotateX: -90,
+        stagger: 0.02,
+        duration: 1.5,
+        ease: "expo.out",
+      });
+
+      // 2. Stacking Cards Effect (The Arsenal Section)
+      // We apply this to the grid items in your Arsenal
+      const cards = gsap.utils.toArray(
+        ".md\\:col-span-2, .bg-surface-container, .bg-surface-container-low",
+      );
+      cards.forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: "top bottom-=100",
+            toggleActions: "play none none reverse",
+          },
+          opacity: 0,
+          y: 100,
+          duration: 1,
+          ease: "power4.out",
+        });
+      });
+
+      // 3. Horizontal Scroll / Stacking for "The Collective"
+      // This creates that "sticky" feeling as you scroll through the team
+      gsap.to(".md\\:col-span-7, .md\\:col-span-5", {
+        scrollTrigger: {
+          trigger: ".grid-cols-12",
+          start: "top center",
+          end: "bottom center",
+          scrub: 1,
+        },
+        scale: 0.95,
+        opacity: 0.8,
+        stagger: 0.5,
+      });
+    </script>
+  </body>
+</html>

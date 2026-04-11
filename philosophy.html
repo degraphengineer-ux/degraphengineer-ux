@@ -1,0 +1,422 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Philosophy | Digital Atelier</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "inverse-surface": "#313030",
+              tertiary: "#823300",
+              "on-tertiary-container": "#ffd9c8",
+              "secondary-fixed": "#e6deff",
+              "on-secondary": "#ffffff",
+              "surface-variant": "#e5e2e1",
+              "on-surface-variant": "#484456",
+              "surface-container": "#f0edec",
+              secondary: "#6052a6",
+              "on-primary-container": "#e4ddff",
+              "inverse-primary": "#cabeff",
+              "tertiary-fixed-dim": "#ffb694",
+              "on-background": "#1c1b1b",
+              surface: "#fcf9f8",
+              "inverse-on-surface": "#f3f0ef",
+              "on-surface": "#1c1b1b",
+              "on-secondary-container": "#433487",
+              background: "#fcf9f8",
+              "surface-tint": "#5f34f0",
+              "primary-fixed": "#e6deff",
+              "on-primary": "#ffffff",
+              "secondary-container": "#b1a2fd",
+              "on-secondary-fixed": "#1c0161",
+              "surface-container-high": "#ebe7e7",
+              "primary-container": "#653cf6",
+              "on-secondary-fixed-variant": "#48398d",
+              "tertiary-container": "#a94400",
+              "surface-container-low": "#f6f3f2",
+              error: "#ba1a1a",
+              "on-primary-fixed": "#1c0062",
+              "surface-bright": "#fcf9f8",
+              "secondary-fixed-dim": "#cabeff",
+              primary: "#4c0fde",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#4700d7",
+              outline: "#797488",
+              "primary-fixed-dim": "#cabeff",
+              "surface-dim": "#dcd9d9",
+              "outline-variant": "#c9c3d9",
+              "tertiary-fixed": "#ffdbcc",
+              "on-tertiary-fixed-variant": "#7b2f00",
+              "surface-container-highest": "#e5e2e1",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed": "#351000",
+            },
+            borderRadius: {
+              DEFAULT: "0px",
+              lg: "0px",
+              xl: "0px",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Newsreader"],
+              body: ["Inter"],
+              label: ["Space Grotesk"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .font-newsreader {
+        font-family: "Newsreader", serif;
+      }
+      .font-space-grotesk {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 300,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .text-editorial-display {
+        font-size: clamp(3rem, 10vw, 6rem);
+        line-height: 0.9;
+        letter-spacing: -0.02em;
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface">
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl flex justify-between items-center px-8 py-6 max-w-[1920px] mx-auto"
+    >
+      <div class="text-2xl font-serif italic text-stone-900 dark:text-stone-50">
+        Michael
+      </div>
+      <div class="hidden md:flex gap-12">
+        <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label text-xs tracking-widest uppercase"
+          href="index.html"
+          >Work</a
+        >
+        <a
+          class="text-[#653cf6] font-bold border-b-0 font-label text-xs tracking-widest uppercase"
+          href="philosophy.html"
+          >Philosophy</a
+        >
+        <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label text-xs tracking-widest uppercase"
+          href="archive.html"
+          >Archive</a
+        >
+        <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-label text-xs tracking-widest uppercase"
+          href="contact.html"
+          >Contact</a
+        >
+      </div>
+      <div class="flex items-center gap-4">
+        <span
+          class="material-symbols-outlined text-stone-900 dark:text-stone-50 cursor-pointer hover:opacity-70 transition-opacity duration-500"
+          >menu</span
+        >
+      </div>
+    </nav>
+    <main class="pt-32">
+      <!-- Hero Section -->
+      <section class="px-12 mb-48">
+        <div class="max-w-7xl mx-auto">
+          <span
+            class="font-space-grotesk text-xs tracking-[0.4em] uppercase text-primary mb-8 block"
+            >Our Ethos</span
+          >
+          <h1
+            class="text-editorial-display font-newsreader italic font-light mb-12"
+          >
+            The Digital Atelier:<br />
+            <span class="ml-[0.1em]">Philosophy &amp; Ethos</span>
+          </h1>
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+            <div class="md:col-span-7">
+              <div
+                class="aspect-[16/9] bg-surface-container-low overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover filter grayscale contrast-125"
+                  data-alt="Abstract close-up of vintage mechanical clockwork parts merging with digital fiber optic glowing lines in monochrome tones"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeFEKICgPtAUFS8Ved5QKZJ_NTPwDnqgLQpCfixuiTmTNdPR-0ouphN6Y08Zw-_YtStKUUWkCwNuj4FNqb9IulmuFMnPIMKKbxkAgB1qehuZEjDNTJ77ovrZh3h1Arqfos0Kk8cEU0VyMfFV01XWg5B-_alk0E7Fi2GRuzFv7R-CzGibsk0MvcGKcEiZAy1SxpoydbAzHk2l3J6Pd0NX2_TyiYFyJbdI0VTid2jkPIrZ6119asVU8OqYDoXEleabpnMsJJXjwIOpY"
+                />
+              </div>
+            </div>
+            <div class="md:col-span-5 pb-12">
+              <h2 class="font-newsreader text-4xl mb-6 leading-tight">
+                High-Tech Humanism
+              </h2>
+              <p
+                class="font-body text-on-surface-variant leading-relaxed text-lg max-w-sm"
+              >
+                We explore the tension between the precision of cold code and
+                the warmth of human narrative. Our work is a bridge between the
+                mathematical and the emotional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 1: Architecture of Empathy -->
+      <section class="bg-surface-container-low py-32 px-12">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center"
+        >
+          <div class="order-2 md:order-1">
+            <span
+              class="font-space-grotesk text-xs tracking-widest uppercase text-stone-400 mb-6 block"
+              >01 / Concept</span
+            >
+            <h2 class="font-newsreader text-5xl mb-8 leading-tight">
+              The Architecture of Empathy
+            </h2>
+            <div
+              class="space-y-6 font-body text-on-surface-variant leading-relaxed"
+            >
+              <p>
+                Code is often viewed as a cold utility, but we believe it is a
+                medium for care. Inspired by the meticulous guidance of Sauda,
+                our technical structures are built to serve human needs first.
+              </p>
+              <p>
+                Every line of logic is an invitation for the user to feel
+                understood. We design interfaces that don't just function—they
+                empathize with the visitor's journey and intent.
+              </p>
+            </div>
+          </div>
+          <div class="order-1 md:order-2">
+            <div class="aspect-[4/5] bg-surface-container overflow-hidden">
+              <img
+                class="w-full h-full object-cover filter grayscale"
+                data-alt="Abstract minimalist architecture showing sharp geometric shadows and light play on a textured white concrete wall"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqBHD8DBU5cns8_kvOEZ7_QQn9IjOweJVW8GaDIHlPLrm5BPUfrnCO7vL4WXDyi9QuNFOvjaYIvwm5-bTMS5S3-98b6g9XdkYnVO644l2JWCDGlG9nSNCauC1khjuc5E1U5No1PscMc8T6vBMO_qa1GsEgiv2g_MoYOn0Q6FK6880FGYw2ztsd8OS-m4t_lKHbq0d2TEIFoSB5dsO68lq3-vJLrdUS9cyO7hCkZbobudAtsJAPCMIIvRgMm97rrt_X-XwZ3Sv-JJA"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2: Principles of Precision -->
+      <section class="py-32 px-12">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-baseline mb-24 gap-8"
+          >
+            <h2 class="font-newsreader text-7xl font-extralight italic">
+              Principles of Precision
+            </h2>
+            <span
+              class="font-space-grotesk text-xs tracking-widest uppercase text-primary"
+              >Technical Mastery</span
+            >
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-0 outline-variant/15 outline"
+          >
+            <div
+              class="p-12 border-r border-outline-variant/15 hover:bg-surface-container-low transition-colors duration-500"
+            >
+              <span
+                class="font-space-grotesk text-xs text-stone-400 mb-12 block"
+                >Performance</span
+              >
+              <h3 class="font-newsreader text-2xl mb-4 italic">Fluid Motion</h3>
+              <p
+                class="font-body text-sm text-on-surface-variant leading-relaxed"
+              >
+                Leveraging GSAP and custom shaders to create transitions that
+                feel organic, never forced. We optimize for the micro-moment.
+              </p>
+            </div>
+            <div
+              class="p-12 border-r border-outline-variant/15 hover:bg-surface-container-low transition-colors duration-500"
+            >
+              <span
+                class="font-space-grotesk text-xs text-stone-400 mb-12 block"
+                >Codebase</span
+              >
+              <h3 class="font-newsreader text-2xl mb-4 italic">
+                Clean Architecture
+              </h3>
+              <p
+                class="font-body text-sm text-on-surface-variant leading-relaxed"
+              >
+                Logic that is as beautiful as the interface. We believe that
+                what is hidden should be as elegant as what is seen.
+              </p>
+            </div>
+            <div
+              class="p-12 hover:bg-surface-container-low transition-colors duration-500"
+            >
+              <span
+                class="font-space-grotesk text-xs text-stone-400 mb-12 block"
+                >Visuals</span
+              >
+              <h3 class="font-newsreader text-2xl mb-4 italic">
+                Minimalist Rigor
+              </h3>
+              <p
+                class="font-body text-sm text-on-surface-variant leading-relaxed"
+              >
+                Removing the unnecessary until only the essential remains.
+                Precision in spacing, typography, and color intent.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3: Collaborative Resonance -->
+      <section class="py-32 px-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+              <span
+                class="font-space-grotesk text-xs tracking-widest uppercase text-stone-400 mb-8 block"
+                >The Collective</span
+              >
+              <h2 class="font-newsreader text-5xl mb-8">
+                Collaborative Resonance
+              </h2>
+              <p
+                class="font-body text-on-surface-variant leading-relaxed mb-12"
+              >
+                Work is never created in a vacuum. 'The Collective' influences
+                our output through a shared vision and a clash of diverse
+                perspectives.
+              </p>
+              <ul
+                class="space-y-4 font-space-grotesk text-xs tracking-widest uppercase"
+              >
+                <li class="flex items-center gap-4 text-primary">
+                  <span class="w-12 h-[1px] bg-primary"></span>
+                  Photography
+                </li>
+                <li class="flex items-center gap-4 text-stone-400">
+                  <span class="w-12 h-[1px] bg-stone-200"></span>
+                  Development
+                </li>
+                <li class="flex items-center gap-4 text-stone-400">
+                  <span class="w-12 h-[1px] bg-stone-200"></span>
+                  Strategy
+                </li>
+                <li class="flex items-center gap-4 text-stone-400">
+                  <span class="w-12 h-[1px] bg-stone-200"></span>
+                  Rhythm
+                </li>
+              </ul>
+            </div>
+            <div class="md:col-span-8 relative">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="aspect-[3/4] bg-surface-container-highest">
+                  <img
+                    class="w-full h-full object-cover filter grayscale brightness-90"
+                    data-alt="Close up of two hands nearly touching, dramatic lighting against a dark background, representing connection"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAytBei5Gq6eR2EdcdcVFab7GPs_Sv-DY5Z3XhaXkhbhZ67W_rjEvjgLYLvwiXtRJaadbQ10nD3nlCMNuYyo0ellMBH3EosgY2NSu62BE1pUFsH4xd6LW0kRHX4dwpMYmgwhO2rF9KYNs8ZjRmBOXDlzNrh2IdnApp26jje-N7S3Pl4CSEDnw34A_Qktqi1Q_cm_YQmUPVSx-qJYxLdIJUtFdFmvVTHxvSHQt9IsOUTCdUJLSPT8yXFxlyE-oLdOgpAM6nCioEQA7c"
+                  />
+                </div>
+                <div class="aspect-[3/4] bg-surface-container-highest mt-24">
+                  <img
+                    class="w-full h-full object-cover filter grayscale contrast-125"
+                    data-alt="High-tech macro shot of a microchip circuit board with sleek metallic textures and deep shadows"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqaDPOgBBgn-spkU5j7xPkiLXBLZ4c4XQAnNvfl12-Ycl31kdoMwvdkvuJSECKK1gAHyOtBANLhGUP3ZcUeN627KXPODZku_c4r2VyOqkwwUjguNC7rkuzHVx6dDheqZkHMfWRHKcKZy6aS1Tlo0LFOIaYkEBpDFO9JvzznnVqedENFDXHNsCpRGap8YpWRmNVHPHUpgF2iT2HVI6TAFk7lqUUo3ITNFO1XUUyDkoar3KxWnVB5dILggKAzCqUsMQs1KJrx52-wlg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Final CTA -->
+      <section class="py-48 px-12 text-center bg-surface-container-lowest">
+        <div class="max-w-2xl mx-auto">
+          <h2 class="font-newsreader text-5xl mb-12 italic">
+            Join the Narrative.
+          </h2>
+          <button
+            class="bg-primary text-white font-space-grotesk tracking-widest uppercase text-sm px-12 py-5 hover:bg-primary-container transition-all duration-500"
+          >
+            Collaborate with us
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-[#f6f3f2] dark:bg-stone-900 flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full"
+    >
+      <div
+        class="font-newsreader italic text-stone-900 dark:text-stone-50 mb-8 md:mb-0"
+      >
+        Digital Atelier
+      </div>
+      <div class="flex flex-col items-center gap-4">
+        <div class="flex gap-8">
+          <a
+            class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+            href="#"
+            >Journal</a
+          >
+          <a
+            class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+            href="#"
+            >Colophon</a
+          >
+          <a
+            class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+            href="#"
+            >Legal</a
+          >
+          <a
+            class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+            href="#"
+            >Accessibility</a
+          >
+        </div>
+        <div
+          class="font-space-grotesk text-[10px] tracking-tighter uppercase text-stone-400"
+        >
+          © 2024 Digital Atelier. Engineered for Humanity.
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-[#653cf6]">
+        <span class="material-symbols-outlined">north_east</span>
+      </div>
+    </footer>
+  </body>
+</html>
